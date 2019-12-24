@@ -15,7 +15,7 @@ public class HerokuAppTest {
         driver.findElement(By.xpath("//button[text()='Add Element'] ")).click();
         driver.findElement(By.className("added-manually")).click();
         int numberOfDeleteButtons = driver.findElements(By.className("added-manually")).size();
-        assertEquals(numberOfDeleteButtons,1,"Number of ramining elements is not correct.");
+        assertEquals(numberOfDeleteButtons,1,"Number of remaining elements is not correct.");
         driver.quit();
     }
 }
